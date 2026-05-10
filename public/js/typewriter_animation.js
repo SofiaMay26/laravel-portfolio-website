@@ -1,0 +1,48 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const el = document.getElementById("typewriter");
+
+    if (!el) return;
+
+    const texts = [
+        "Laravel Developer",
+        "PHP Enthusiast",
+        "Frontend Designer",
+        "JavaScript Developer",
+        "Freelance Web Developer",
+    ];
+
+    let i = 0;
+    let char = 0;
+    let deleting = false;
+
+    function loop() {
+        const current = texts[i];
+
+        if (deleting) {
+            char--;
+        } else {
+            char++;
+        }
+
+        el.textContent = current.substring(0, char);
+
+        let speed = deleting ? 60 : 120;
+
+        // finished typing
+        if (!deleting && char === current.length) {
+            speed = 1200;
+            deleting = true;
+        }
+
+        // finished deleting
+        if (deleting && char === 0) {
+            deleting = false;
+            i = (i + 1) % texts.length;
+            speed = 300;
+        }
+
+        setTimeout(loop, speed);
+    }
+
+    loop();
+});
