@@ -8,40 +8,67 @@
 </head>
 
 
-<body class="bg-gray-950 text-white">
+<body class="scroll-smooth bg-gray-950 text-white">
 
-<!-- NAVBAR -->
-<nav class="fixed top-0 left-0 w-full flex justify-between items-center p-6 
-bg-gray-900/70 backdrop-blur-md z-50 border-b border-white/10">
-    <h1 class="text-xl font-bold">Sofia.dev</h1>
-    <div class="space-x-6">
-        <a href="#" class="hover:text-blue-400">Home</a>
-        <a href="#" class="hover:text-blue-400">About</a>
-        <a href="#" class="hover:text-blue-400">Projects</a>
-        <a href="#" class="hover:text-blue-400">Contact</a>
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800 shadow-lg">
+
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="#"
+           class="text-2xl font-bold text-white tracking-wide hover:text-blue-400 transition duration-300">
+            Sofia.dev
+        </a>
+
+        <!-- Menu -->
+        <div class="hidden md:flex items-center gap-8">
+
+            <a href="#home"
+               class="relative text-gray-300 hover:text-blue-400 transition duration-300 group">
+
+                Home
+
+                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            <a href="#about"
+               class="relative text-gray-300 hover:text-blue-400 transition duration-300 group">
+
+                About
+
+                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            <a href="#projects"
+               class="relative text-gray-300 hover:text-blue-400 transition duration-300 group">
+
+                Projects
+
+                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+            <a href="#contact"
+               class="relative text-gray-300 hover:text-blue-400 transition duration-300 group">
+
+                Contact
+
+                <span class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+
+        </div>
+
+        <!-- Resume Button -->
+        <a href="/sofia_CV/sofia_CV.pdf" download
+   class="px-5 py-2 bg-blue-600 rounded-xl text-white">
+   Download Resume
+</a>
+
     </div>
+
 </nav>
 
-<!-- HERO -->
-<!-- <section class="text-center py-28">
 
-    <h2 class="text-5xl font-bold">
-        Hi, I'm <span class="text-blue-400">Sofia</span> 👋
-    </h2>
-
-    <p class="mt-4 text-lg text-gray-300">
-        I am a <span id="typewriter" class="text-blue-400 font-semibold"></span>
-    </p>
-
-    <p class="text-gray-400 mt-2 text-lg">
-        Junior Web Developer | Laravel & JavaScript
-    </p>
-
-    <button class="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl transition transform hover:scale-105">
-        View My Work
-    </button>
-
-</section> -->
 
 <!-- HERO WITH VIDEO BACKGROUND -->
 <section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
@@ -70,42 +97,129 @@ bg-gray-900/70 backdrop-blur-md z-50 border-b border-white/10">
         </p>
 
         <!-- Buttons -->
-        <div class="mt-8 flex justify-center gap-4">
-            <a href="#projects"
-               class="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-xl transition transform hover:scale-105">
-                View Projects
-            </a>
+<div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
 
-            <a href="#contact"
-               class="px-6 py-3 border border-gray-400 hover:border-blue-400 rounded-xl transition transform hover:scale-105">
-                Contact Me
-            </a>
+   <!-- Buttons -->
+<div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+
+    <!-- My Works Button -->
+
+    <!-- GitHub / Portfolio Link -->
+    <a href="https://github.com/SofiaMay26"
+    title="My Works"
+       target="_blank"
+       class="px-8 py-3 border border-gray-400 hover:border-blue-400 text-white font-semibold rounded-xl transition duration-300 transform hover:scale-105 hover:bg-white/5">
+       
+        Visit My GitHub
+    </a>
+
+</div>
+
+  
+    
+
+</div>
+
+    </div>
+
+</section>
+
+<!-- About Me Section -->
+<section id="about"
+         class="min-h-screen bg-gray-950 text-white flex items-center justify-center px-6 py-20">
+
+    <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Left Side Image -->
+        <div class="flex justify-center">
+
+            <div class="relative group">
+
+                <!-- Glow Effect -->
+                <div class="absolute inset-0 bg-blue-500 blur-3xl opacity-20 group-hover:opacity-40 transition duration-500 rounded-full"></div>
+
+                <!-- Profile Image -->
+                <img src="/images/profile_pic.jpg"
+                     
+                     alt="Profile"
+                     class="relative w-72 h-72 object-cover rounded-3xl border-4 border-gray-800 shadow-2xl transition duration-500 group-hover:scale-105">
+
+            </div>
+
+        </div>
+
+        <!-- Right Side Content -->
+        <div>
+
+            <p class="text-blue-400 font-semibold tracking-widest uppercase mb-3">
+                About Me
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                Aspiring <span class="text-blue-400">Web Developer</span>
+            </h2>
+
+            <p class="text-gray-400 leading-relaxed text-lg mb-6">
+                Hi! I'm Sofia, an aspiring web developer passionate about
+                building modern and responsive websites using Laravel,
+                Tailwind CSS, JavaScript, and MySQL.
+            </p>
+
+            <p class="text-gray-400 leading-relaxed text-lg mb-8">
+                I enjoy creating clean UI designs, learning new technologies,
+                and developing projects that improve my skills in frontend
+                and backend development.
+            </p>
+
+            <!-- Skills -->
+            <div class="flex flex-wrap gap-3 mb-8">
+                <span class="px-4 py-2 bg-gray-800 rounded-xl border border-gray-700 hover:border-blue-400 transition">
+                    HTML5
+                </span>
+                <span class="px-4 py-2 bg-gray-800 rounded-xl border border-gray-700 hover:border-blue-400 transition">
+                    CSS
+                </span>
+                 <span class="px-4 py-2 bg-gray-800 rounded-xl border border-gray-700 hover:border-blue-400 transition">
+                    Bootstrap
+                </span>
+
+                <span class="px-4 py-2 bg-gray-800 rounded-xl border border-gray-700 hover:border-blue-400 transition">
+                    Laravel
+                </span>
+
+                
+
+                <span class="px-4 py-2 bg-gray-800 rounded-xl border border-gray-700 hover:border-blue-400 transition">
+                    Tailwind CSS
+                </span>
+
+                <span class="px-4 py-2 bg-gray-800 rounded-xl border border-gray-700 hover:border-blue-400 transition">
+                    JavaScript
+                </span>
+
+                <span class="px-4 py-2 bg-gray-800 rounded-xl border border-gray-700 hover:border-blue-400 transition">
+                    MySQL
+                </span>
+
+            </div>
+
+           
+            
+
         </div>
 
     </div>
 
 </section>
+<form action="{{ route('contact.send') }}" method="POST">
+    @csrf
 
-<!-- ABOUT -->
-<section class="px-10 py-16 bg-gray-900">
-    <h3 class="text-3xl font-bold mb-4">About Me</h3>
-    <p class="text-gray-300 leading-7">
-        I am a beginner web developer focused on Laravel, PHP, and frontend design.
-        I love building clean, modern, and responsive web applications.
-    </p>
-</section>
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+    <textarea name="message" placeholder="Message"></textarea>
 
-<!-- SKILLS -->
-<section class="px-10 py-16">
-    <h3 class="text-3xl font-bold mb-6">Skills</h3>
-
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="bg-gray-800 p-4 rounded-xl text-center">HTML</div>
-        <div class="bg-gray-800 p-4 rounded-xl text-center">CSS</div>
-        <div class="bg-gray-800 p-4 rounded-xl text-center">JavaScript</div>
-        <div class="bg-gray-800 p-4 rounded-xl text-center">Laravel</div>
-    </div>
-</section>
+    <button type="submit">Send</button>
+</form>
 
 <!-- PROJECTS -->
 <section class="px-10 py-16 bg-gray-900">
@@ -128,6 +242,8 @@ bg-gray-900/70 backdrop-blur-md z-50 border-b border-white/10">
         </div>
     </div>
 </section>
+
+
 
 <!-- CONTACT -->
 <section class="px-10 py-16 text-center">
