@@ -24,9 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
             char++;
         }
 
+        char = Math.max(0, char);
         el.textContent = current.substring(0, char);
 
-        let speed = deleting ? 60 : 120;
+        let speed = deleting ? 40 : 90;
 
         // finished typing
         if (!deleting && char === current.length) {

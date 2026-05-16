@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sofia May | Laravel Developer Portfolio</title>
+
+    <!-- SEO (important for hiring visibility) -->
+    <meta name="description" content="Portfolio of Sofia May - Laravel and Frontend Web Developer">
+    <meta name="keywords" content="Laravel, PHP, Web Developer, Portfolio, JavaScript, Frontend Developer">
+    <meta name="author" content="Sofia May">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    <!-- Optional: Favicon -->
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
+
 </head>
 
 
@@ -81,31 +93,36 @@
     <!-- Dark Overlay -->
     <div class="absolute inset-0 bg-black/70"></div>
 
-    <!-- Content -->
-    <div class="relative z-10 px-6">
+   <!-- Content -->
+<div class="relative z-10 px-6 text-center max-w-3xl mx-auto">
 
-        <h1 class="text-5xl md:text-6xl font-bold text-white">
-            Hi, I'm <span class="text-blue-400">Sofia</span> 👋
-        </h1>
+    <h1 class="text-5xl md:text-6xl font-bold text-white leading-tight">
+        Hi, I'm <span class="text-blue-400">Sofia</span> 👋
+    </h1>
 
-        <p class="mt-4 text-xl text-gray-300">
-            I am a <span id="typewriter" class="text-blue-400 font-semibold"></span>
-        </p>
+    <p class="mt-5 text-xl md:text-2xl text-gray-300">
+        I am a
+        <span id="typewriter" class="text-blue-400 font-semibold"></span>
+    </p>
 
-        <p class="mt-3 text-gray-400">
-            Building modern Laravel & JavaScript web applications
-        </p>
+    <p class="mt-4 text-gray-400 text-base md:text-lg">
+        Building modern Laravel & JavaScript web applications with clean UI, performance, and user-focused design.
+    </p>
 
-        <!-- Buttons -->
-<div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+    <!-- Buttons -->
+    <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
 
-   <!-- Buttons -->
-<div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#projects"
+           class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition transform hover:scale-105">
+            View Projects
+        </a>
 
-    <!-- My Works Button -->
+        <a href="#contact"
+           class="px-6 py-3 border border-gray-400 text-white hover:border-blue-400 rounded-xl transition transform hover:scale-105">
+            Contact Me
+        </a>
 
-    <!-- GitHub / Portfolio Link -->
-    <a href="https://github.com/SofiaMay26"
+         <a href="https://github.com/SofiaMay26"
     title="My Works"
        target="_blank"
        class="px-8 py-3 border border-gray-400 hover:border-blue-400 text-white font-semibold rounded-xl transition duration-300 transform hover:scale-105 hover:bg-white/5">
@@ -113,12 +130,11 @@
         Visit My GitHub
     </a>
 
-</div>
-
-  
-    
+    </div>
 
 </div>
+
+
 
     </div>
 
@@ -270,45 +286,174 @@
     </div>
 </section>
 
-<!-- PROJECTS -->
-<section class="px-10 py-16 bg-gray-900">
-    <h3 class="text-3xl font-bold mb-6">Projects</h3>
 
-    <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-gray-800 p-5 rounded-xl">
-            <h4 class="font-bold">E-Commerce App</h4>
-            <p class="text-gray-400 text-sm">Laravel + Bootstrap</p>
-        </div>
 
-        <div class="bg-gray-800 p-5 rounded-xl">
-            <h4 class="font-bold">Portfolio Website</h4>
-            <p class="text-gray-400 text-sm">Laravel + Tailwind</p>
-        </div>
+<section id="projects" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
 
-        <div class="bg-gray-800 p-5 rounded-xl">
-            <h4 class="font-bold">Task Manager</h4>
-            <p class="text-gray-400 text-sm">PHP + MySQL</p>
+        <!-- Section Title -->
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+            My Projects
+        </h2>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project Card 1 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+
+                <div class="h-40 bg-blue-500 flex items-center justify-center text-white text-xl font-bold">
+                    Portfolio Website
+                </div>
+
+                <div class="p-5">
+                    <p class="text-gray-600 mb-4">
+                        My personal responsive portfolio built using Laravel and Tailwind CSS.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">Laravel</span>
+                        <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Tailwind</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">PHP</span>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <a href="#" class="flex-1 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            Live
+                        </a>
+                        <a href="#" class="flex-1 text-center border border-gray-300 py-2 rounded-lg hover:border-blue-400 transition">
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+
+                <div class="h-40 bg-purple-500 flex items-center justify-center text-white text-xl font-bold">
+                    E-Commerce UI
+                </div>
+
+                <div class="p-5">
+                    <p class="text-gray-600 mb-4">
+                        A modern e-commerce frontend layout with responsive product cards.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Bootstrap</span>
+                        <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JS</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">HTML</span>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <a href="#" class="flex-1 text-center bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition">
+                            Live
+                        </a>
+                        <a href="#" class="flex-1 text-center border border-gray-300 py-2 rounded-lg hover:border-purple-400 transition">
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+
+                <div class="h-40 bg-green-500 flex items-center justify-center text-white text-xl font-bold">
+                    Contact System
+                </div>
+
+                <div class="p-5">
+                    <p class="text-gray-600 mb-4">
+                        Laravel contact form with database storage and validation system.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Laravel</span>
+                        <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">MySQL</span>
+                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Backend</span>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <a href="#" class="flex-1 text-center bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+                            Live
+                        </a>
+                        <a href="#" class="flex-1 text-center border border-gray-300 py-2 rounded-lg hover:border-green-400 transition">
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
 
 
-<!-- CONTACT -->
-<section class="px-10 py-16 text-center">
-    <h3 class="text-3xl font-bold">Contact Me</h3>
-    <p class="text-gray-400 mt-2">email: tempsofiemae@gmail.com</p>
-    <p class="text-gray-400 mt-2">mobile number: 0967-387-2723</p>
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-800">
+            Get In Touch
+        </h3>
+
+        <p class="text-gray-500 mt-3">
+            Feel free to contact me for job opportunities or collaborations.
+        </p>
+
+        <!-- Contact Cards -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Email Card -->
+            <div class="bg-gray-50 rounded-2xl shadow-md p-6 hover:shadow-xl transition">
+                <div class="text-blue-600 text-2xl mb-2">📧</div>
+                <h4 class="font-semibold text-gray-800">Email</h4>
+                <p class="text-gray-600 mt-2">tempsofiemae@gmail.com</p>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="bg-gray-50 rounded-2xl shadow-md p-6 hover:shadow-xl transition">
+                <div class="text-green-600 text-2xl mb-2">📱</div>
+                <h4 class="font-semibold text-gray-800">Mobile</h4>
+                <p class="text-gray-600 mt-2">0967-387-2723</p>
+            </div>
+
+        </div>
+
+        <!-- Optional Button -->
+        <div class="mt-10">
+            <a href="mailto:tempsofiemae@gmail.com"
+               class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition transform hover:scale-105">
+                Send Email
+            </a>
+        </div>
+
+    </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="text-center p-6 bg-gray-900 text-gray-500">
-    © 2026 Sofia May. All rights reserved.
+<footer class="bg-gray-900 text-gray-400 py-6">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+
+        <p class="text-sm">
+            © 2026 Sofia May. All rights reserved.
+        </p>
+
+        <div class="flex gap-4 mt-3 md:mt-0">
+            <a href="#home" class="hover:text-white transition">Home</a>
+            <a href="#projects" class="hover:text-white transition">Projects</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+        </div>
+
+    </div>
 </footer>
 
-
 <script src="{{ asset('js/hero.js') }}"></script>
-<script src="{{ asset('js/typewriter_animation.js') }}"></script>
+<!-- <script src="{{ asset('js/typewriter_animation.js') }}"></script> -->
+<script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>
