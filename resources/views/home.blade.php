@@ -211,15 +211,64 @@
     </div>
 
 </section>
-<form action="{{ route('contact.send') }}" method="POST">
-    @csrf
+<section class="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+    <div class="w-full max-w-2xl bg-white shadow-lg rounded-2xl p-8">
 
-    <input type="text" name="name" placeholder="Name">
-    <input type="email" name="email" placeholder="Email">
-    <textarea name="message" placeholder="Message"></textarea>
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">
+            Contact Me
+        </h2>
 
-    <button type="submit">Send</button>
-</form>
+        <p class="text-center text-gray-500 mb-8">
+            Got a project or question? Send me a message 👇
+        </p>
+
+        {{-- Success Message --}}
+        @if(session('success'))
+            <div class="bg-green-100 text-green-700 p-3 rounded mb-5 text-center">
+                {{ session('success') }}
+            </div>
+        @endif
+
+        <form action="{{ route('contact.send') }}" method="POST" class="space-y-5">
+            @csrf
+
+           {{-- Name --}}
+<input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    class="w-full border border-gray-300 rounded-lg p-3 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+    required
+>
+
+{{-- Email --}}
+<input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    class="w-full border border-gray-300 rounded-lg p-3 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+    required
+>
+
+            {{-- Message --}}
+           <textarea
+    name="message"
+    rows="5"
+    placeholder="Your Message"
+    class="w-full border border-gray-300 rounded-lg p-3 text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
+    required
+></textarea>
+
+            {{-- Button --}}
+            <button
+                type="submit"
+                class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            >
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>
 
 <!-- PROJECTS -->
 <section class="px-10 py-16 bg-gray-900">

@@ -15,4 +15,8 @@ Route::get('/', function () {
 });
 
 // Contact form submit
-Route::post('/contact', [ContactController::class, 'send'])->name('contact.send');
+Route::post('/contact-send', [ContactController::class, 'send'])
+    ->name('contact.send');
+
+
+
