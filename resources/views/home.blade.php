@@ -33,6 +33,22 @@
             Sofia.dev
         </a>
 
+        <div class="flex gap-4 mt-6">
+
+    {{-- Login Button --}}
+    <a href="{{ route('login') }}"
+       class="px-6 py-3 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition">
+        Login
+    </a>
+
+    {{-- Register Button --}}
+    <a href="{{ route('register') }}"
+       class="px-6 py-3 bg-blue-500 text-white rounded-xl font-semibold hover:bg-blue-600 transition">
+        Register
+    </a>
+
+</div>
+
         <!-- Menu -->
         <div class="hidden md:flex items-center gap-8">
 
@@ -245,7 +261,7 @@
             </div>
         @endif
 
-        <form action="{{ route('contact.send') }}" method="POST" class="space-y-5">
+        <form action="{{ route('contact.store') }}" method="POST" class="space-y-5">
             @csrf
 
            {{-- Name --}}
