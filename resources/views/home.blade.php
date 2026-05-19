@@ -30,7 +30,7 @@
         <!-- Logo -->
         <a href="#"
            class="text-2xl font-bold text-white tracking-wide hover:text-blue-400 transition duration-300">
-            Sofia.dev
+            SofiaMay.dev
         </a>
 
         <div class="flex gap-4 mt-6">
@@ -310,51 +310,54 @@
         <!-- Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Project Card -->
+ 
+
+           
+
+           <!-- Project Card 1(First Website)-->
 <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
 
+    <!-- Video -->
     <video 
-    class="w-full h-48 object-cover"
-    autoplay
-    muted
-    loop
-    playsinline
->
-    <source src="{{ asset('videos/spc_computer_hardware.mp4') }}" type="video/mp4">
-</video>
+        class="w-full h-48 object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+        <source src="{{ asset('videos/my_first_website.mp4') }}" type="video/mp4">
+    </video>
 
-       
-
+    <!-- Content -->
     <div class="p-5">
 
-    <h3 class="text-xl font-bold text-gray-800 mb-3 ">
-            SPC Computer Hardware 2025
+        <!-- Title -->
+        <h3 class="text-xl font-bold text-gray-800 mb-3">
+            My First Website! 
         </h3>
 
+        <!-- Description -->
         <p class="text-gray-600 mb-4">
-            A responsive computer hardware e-commerce website showcasing PC parts, accessories, and product listings built using Laravel and Tailwind CSS.
+            My very first website project where I started learning HTML, CSS, and JavaScript. This project helped me understand responsive layouts and basic web development fundamentals.
         </p>
 
-        <div class="flex flex-wrap gap-2 mb-4">
-            <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">HTML5</span>
+        <!-- Tech Stack -->
+        <div class="flex flex-wrap gap-2 mb-5">
+            <span class="text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded">HTML</span>
             <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">CSS</span>
-            <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Javascript</span>
-            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Bootstrap</span>
+            <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JavaScript</span>
         </div>
 
-        <div class="flex gap-3">
-           <a href="https://github.com/marvinjagonio/Sofias_Final_Project.git"
-   target="_blank"
-   class="flex-1 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-    View Project
-</a>
+        <!-- Button -->
+        <a href="https://github.com/SofiaMay26/sofia-business-website-2024.git"
+           class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+            View Project
+        </a>
 
-            
-        </div>
     </div>
 </div>
 
-            <!-- Project Card 2 -->
+ <!-- Project Card 2 (Website Assignment)-->
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
 
                  <video 
@@ -395,46 +398,47 @@
                 </div>
             </div>
 
-           <!-- Project Card -->
+           <!-- Project Card 3 (SPC Website 2025)-->
 <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
 
-    <!-- Video -->
     <video 
-        class="w-full h-48 object-cover"
-        autoplay
-        muted
-        loop
-        playsinline
-    >
-        <source src="{{ asset('videos/my_first_website.mp4') }}" type="video/mp4">
-    </video>
+    class="w-full h-48 object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+>
+    <source src="{{ asset('videos/spc_computer_hardware.mp4') }}" type="video/mp4">
+</video>
 
-    <!-- Content -->
+       
+
     <div class="p-5">
 
-        <!-- Title -->
-        <h3 class="text-xl font-bold text-gray-800 mb-3">
-            My First Website! 
+    <h3 class="text-xl font-bold text-gray-800 mb-3 ">
+            SPC Computer Hardware 2025
         </h3>
 
-        <!-- Description -->
         <p class="text-gray-600 mb-4">
-            My very first website project where I started learning HTML, CSS, and JavaScript. This project helped me understand responsive layouts and basic web development fundamentals.
+            A responsive computer hardware e-commerce website showcasing PC parts, accessories, and product listings built using Laravel and Tailwind CSS.
         </p>
 
-        <!-- Tech Stack -->
-        <div class="flex flex-wrap gap-2 mb-5">
-            <span class="text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded">HTML</span>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">HTML5</span>
             <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">CSS</span>
-            <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JavaScript</span>
+            <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Javascript</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Bootstrap</span>
         </div>
 
-        <!-- Button -->
-        <a href="https://github.com/SofiaMay26/sofia-business-website-2024.git"
-           class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-            View Project
-        </a>
+        <div class="flex gap-3">
+           <a href="https://github.com/marvinjagonio/Sofias_Final_Project.git"
+   target="_blank"
+   class="flex-1 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+    View Project
+</a>
 
+            
+        </div>
     </div>
 </div>
 
