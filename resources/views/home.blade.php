@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,17 +35,7 @@
 
         <div class="flex gap-4 mt-6">
 
-    {{-- Login Button --}}
-    <a href="{{ route('login') }}"
-       class="px-6 py-3 bg-white text-black rounded-xl font-semibold hover:bg-gray-200 transition">
-        Login
-    </a>
-
-    {{-- Register Button --}}
-    <a href="{{ route('register') }}"
-       class="px-6 py-3 bg-blue-500 text-white rounded-xl font-semibold hover:bg-blue-600 transition">
-        Register
-    </a>
+  
 
 </div>
 
@@ -53,7 +43,8 @@
         <div class="hidden md:flex items-center gap-8">
 
             <a href="#home"
-               class="relative text-gray-300 hover:text-blue-400 transition duration-300 group">
+               class="relative text-gray-300 hover:text-blue-400 transition duration-300 group
+               ">
 
                 Home
 
@@ -86,6 +77,9 @@
 
         </div>
 
+          {{-- Login Button --}}
+  
+
         <!-- Resume Button -->
         <a href="/sofia_CV/sofia_CV.pdf" download
    class="px-5 py-2 bg-blue-600 rounded-xl text-white">
@@ -93,10 +87,11 @@
 </a>
 
     </div>
+    
 
 </nav>
 
-
+<section id="home" class="min-h-screen"> 
 
 <!-- HERO WITH VIDEO BACKGROUND -->
 <section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
@@ -315,46 +310,60 @@
         <!-- Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Project Card 1 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+            <!-- Project Card -->
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
 
-                <div class="h-40 bg-blue-500 flex items-center justify-center text-white text-xl font-bold">
-                    Portfolio Website
-                </div>
+    <video 
+    class="w-full h-48 object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+>
+    <source src="{{ asset('videos/spc_computer_hardware.mp4') }}" type="video/mp4">
+</video>
 
-                <div class="p-5">
-                    <p class="text-gray-600 mb-4">
-                        My personal responsive portfolio built using Laravel and Tailwind CSS.
-                    </p>
+    <div class="p-5">
+        <p class="text-gray-600 mb-4">
+            A responsive computer hardware e-commerce website showcasing PC parts, accessories, and product listings built using Laravel and Tailwind CSS.
+        </p>
 
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">Laravel</span>
-                        <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Tailwind</span>
-                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">PHP</span>
-                    </div>
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">HTML5</span>
+            <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">CSS</span>
+            <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Javascript</span>
+            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Bootstrap</span>
+        </div>
 
-                    <div class="flex gap-3">
-                        <a href="#" class="flex-1 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                            Live
-                        </a>
-                        <a href="#" class="flex-1 text-center border border-gray-300 py-2 rounded-lg hover:border-blue-400 transition">
-                            Code
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="flex gap-3">
+           <a href="https://github.com/marvinjagonio/Sofias_Final_Project.git"
+   target="_blank"
+   class="flex-1 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+    View Project
+</a>
+
+            
+        </div>
+    </div>
+</div>
 
             <!-- Project Card 2 -->
             <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
 
-                <div class="h-40 bg-purple-500 flex items-center justify-center text-white text-xl font-bold">
-                    E-Commerce UI
-                </div>
+                 <video 
+    class="w-full h-48 object-cover"
+    autoplay
+    muted
+    loop
+    playsinline
+>
+    <source src="{{ asset('videos/website_assignment.mp4') }}" type="video/mp4">
+</video>
 
                 <div class="p-5">
-                    <p class="text-gray-600 mb-4">
-                        A modern e-commerce frontend layout with responsive product cards.
-                    </p>
+                      <p class="text-gray-600 mb-4">
+            A responsive website project showcasing modern UI design and web development features.
+        </p>
 
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Bootstrap</span>
@@ -363,13 +372,14 @@
                     </div>
 
                     <div class="flex gap-3">
-                        <a href="#" class="flex-1 text-center bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition">
-                            Live
-                        </a>
-                        <a href="#" class="flex-1 text-center border border-gray-300 py-2 rounded-lg hover:border-purple-400 transition">
-                            Code
-                        </a>
-                    </div>
+           <a href="https://github.com/SofiaMay26/web-builder-assignment.git"
+   target="_blank"
+   class="flex-1 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+    View Project
+</a>
+
+            
+        </div>
                 </div>
             </div>
 
@@ -458,11 +468,11 @@
             © 2026 Sofia May. All rights reserved.
         </p>
 
-        <div class="flex gap-4 mt-3 md:mt-0">
-            <a href="#home" class="hover:text-white transition">Home</a>
-            <a href="#projects" class="hover:text-white transition">Projects</a>
-            <a href="#contact" class="hover:text-white transition">Contact</a>
-        </div>
+       <div class="flex gap-4 mt-3 md:mt-0">
+    <a href="#home" class="hover:text-white transition">Home</a>
+    <a href="#projects" class="hover:text-white transition">Projects</a>
+    <a href="#contact" class="hover:text-white transition">Contact</a>
+</div>
 
     </div>
 </footer>
