@@ -30,8 +30,12 @@
 
             <!-- Logo -->
             <a href="#"
-                class="text-2xl font-bold text-white tracking-wide hover:text-blue-400 transition duration-300">
+                class="text-2xl font-black tracking-tight text-white transition duration-300 hover:text-blue-400">
+
+                <span class="text-blue-400">&lt;</span>
                 SofiaMay.dev
+                <span class="text-blue-400">/&gt;</span>
+
             </a>
 
             <div class="flex gap-4 mt-6">

@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const texts = [
-        "Laravel Developer",
-        "PHP Enthusiast",
-        "Frontend Designer",
-        "JavaScript Developer",
-        "Freelance Web Developer",
+        "Junior Front-End Developer",
+        "Aspiring Full-Stack Laravel Developer",
+        "Responsive Web Designer",
+        "Laravel & PHP Developer",
+        "Creative Web Developer",
     ];
 
     let index = 0;
@@ -29,10 +29,16 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!isDeleting && charIndex === current.length) {
             speed = 1500;
             isDeleting = true;
+            el.style.color = "yellow";
+
+            el.style.fontWeight = "bold";
         } else if (isDeleting && charIndex === 0) {
             isDeleting = false;
             index = (index + 1) % texts.length;
             speed = 300;
+            el.style.color = "#60a5fa";
+
+            el.style.fontWeight = "normal";
         }
 
         setTimeout(type, speed);
