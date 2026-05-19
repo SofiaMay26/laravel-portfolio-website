@@ -323,7 +323,14 @@
     <source src="{{ asset('videos/spc_computer_hardware.mp4') }}" type="video/mp4">
 </video>
 
+       
+
     <div class="p-5">
+
+    <h3 class="text-xl font-bold text-gray-800 mb-3 ">
+            SPC Computer Hardware 2025
+        </h3>
+
         <p class="text-gray-600 mb-4">
             A responsive computer hardware e-commerce website showcasing PC parts, accessories, and product listings built using Laravel and Tailwind CSS.
         </p>
@@ -360,7 +367,12 @@
     <source src="{{ asset('videos/website_assignment.mp4') }}" type="video/mp4">
 </video>
 
+ 
+
                 <div class="p-5">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+            Website Assignment 
+        </h3>
                       <p class="text-gray-600 mb-4">
             A responsive website project showcasing modern UI design and web development features.
         </p>
@@ -383,34 +395,48 @@
                 </div>
             </div>
 
-            <!-- Project Card 3 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+           <!-- Project Card -->
+<div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
 
-                <div class="h-40 bg-green-500 flex items-center justify-center text-white text-xl font-bold">
-                    Contact System
-                </div>
+    <!-- Video -->
+    <video 
+        class="w-full h-48 object-cover"
+        autoplay
+        muted
+        loop
+        playsinline
+    >
+        <source src="{{ asset('videos/my_first_website.mp4') }}" type="video/mp4">
+    </video>
 
-                <div class="p-5">
-                    <p class="text-gray-600 mb-4">
-                        Laravel contact form with database storage and validation system.
-                    </p>
+    <!-- Content -->
+    <div class="p-5">
 
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Laravel</span>
-                        <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">MySQL</span>
-                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Backend</span>
-                    </div>
+        <!-- Title -->
+        <h3 class="text-xl font-bold text-gray-800 mb-3">
+            My First Website! 
+        </h3>
 
-                    <div class="flex gap-3">
-                        <a href="#" class="flex-1 text-center bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
-                            Live
-                        </a>
-                        <a href="#" class="flex-1 text-center border border-gray-300 py-2 rounded-lg hover:border-green-400 transition">
-                            Code
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <!-- Description -->
+        <p class="text-gray-600 mb-4">
+            My very first website project where I started learning HTML, CSS, and JavaScript. This project helped me understand responsive layouts and basic web development fundamentals.
+        </p>
+
+        <!-- Tech Stack -->
+        <div class="flex flex-wrap gap-2 mb-5">
+            <span class="text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded">HTML</span>
+            <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">CSS</span>
+            <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JavaScript</span>
+        </div>
+
+        <!-- Button -->
+        <a href="https://github.com/SofiaMay26/sofia-business-website-2024.git"
+           class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+            View Project
+        </a>
+
+    </div>
+</div>
 
         </div>
     </div>
