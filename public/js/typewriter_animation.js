@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!el) return;
 
     const texts = [
-        "Laravel Developer",
-        "PHP Enthusiast",
-        "Frontend Designer",
-        "JavaScript Developer",
-        "Freelance Web Developer",
+        "Junior Front-End Developer",
+        "Aspiring Full-Stack Laravel Developer",
+        "Responsive Web Designer",
+        "Laravel & PHP Developer",
+        "Creative Web Developer",
     ];
 
     let i = 0;
