@@ -22,3 +22,37 @@ new Swiper(".mySwiper", {
         },
     },
 });
+
+//  Contact Swiper
+
+const contactSwiper = new Swiper(".contactSwiper", {
+    loop: true,
+    spaceBetween: 30,
+
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: ".contactSwiper .swiper-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".contactSwiper .swiper-button-next",
+        prevEl: ".contactSwiper .swiper-button-prev",
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+    },
+});

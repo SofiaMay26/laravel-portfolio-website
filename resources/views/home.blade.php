@@ -40,9 +40,9 @@
             <a href="#"
                 class="text-2xl font-black tracking-tight text-white transition duration-300 hover:text-blue-400">
 
-                <span class="text-blue-400">&lt;</span>
+                <span class="text-pink-400">&lt;</span>
                 SofiaMay.dev
-                <span class="text-blue-400">/&gt;</span>
+                <span class="text-pink-400">/&gt;</span>
 
             </a>
 
@@ -56,37 +56,37 @@
             <div class="hidden md:flex items-center gap-8">
 
                 <a href="#home"
-                    class="relative text-gray-300 hover:text-blue-400 transition duration-300 group
+                    class="relative text-gray-300 hover:text-pink-400 transition duration-300 group
                ">
 
                     Home
 
                     <span
-                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
-                <a href="#about" class="relative text-gray-300 hover:text-blue-400 transition duration-300 group">
+                <a href="#about" class="relative text-gray-300 hover:text-pink-400 transition duration-300 group">
 
                     About
 
                     <span
-                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
-                <a href="#projects" class="relative text-gray-300 hover:text-blue-400 transition duration-300 group">
+                <a href="#projects" class="relative text-gray-300 hover:text-pink-400 transition duration-300 group">
 
                     Projects
 
                     <span
-                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
-                <a href="#contact" class="relative text-gray-300 hover:text-blue-400 transition duration-300 group">
+                <a href="#contact" class="relative text-gray-300 hover:text-pink-400 transition duration-300 group">
 
                     Contact
 
                     <span
-                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
+                        class="absolute left-0 -bottom-1 w-0 h-0.5 bg-pink-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
             </div>
@@ -95,7 +95,8 @@
 
 
             <!-- Resume Button -->
-            <a href="/sofia_CV/sofia_CV.pdf" download class="px-5 py-2 bg-blue-600 rounded-xl text-white">
+            <a href="/sofia_CV/sofia_CV.pdf" download
+                class="px-5 py-2 rounded-xl text-white font-semibold bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1">
                 Download Resume
             </a>
 
@@ -121,12 +122,12 @@
             <div class="relative z-10 px-6 text-center max-w-3xl mx-auto">
 
                 <h1 class="text-5xl md:text-6xl font-bold text-white leading-tight">
-                    Hi, I'm <span class="text-blue-400">Sofia May M. Temperante</span> 👋
+                    Hi, I'm <span class="text-pink-400">Sofia May M. Temperante</span> 👋
                 </h1>
 
                 <p class="mt-5 text-xl md:text-2xl text-gray-300">
                     I am a
-                    <span id="typewriter" class="text-blue-400 font-semibold"></span>
+                    <span id="typewriter" class="text-pink-400 font-semibold"></span>
                 </p>
 
                 <p class="mt-4 text-gray-400 text-base md:text-lg">
@@ -431,32 +432,13 @@
 
 
 
-        <div class="swiper projectSwiper">
-            <div class="swiper-wrapper">
 
-                <!-- Project 1 -->
-                <div class="swiper-slide">
-                    <!-- Project Card 1 code here -->
-                </div>
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
 
-                <!-- Project 2 -->
-                <div class="swiper-slide">
-                    <!-- Project Card 2 code here -->
-                </div>
-
-                <!-- Project 3 -->
-                <div class="swiper-slide">
-                    <!-- Project Card 3 code here -->
-                </div>
-
-            </div>
-
-            <!-- Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
         </div>
 
         {{-- SEND ME A MESSAGE --}}
@@ -520,36 +502,64 @@
                     Feel free to contact me for job opportunities or collaborations.
                 </p>
 
-                <!-- Contact Cards -->
-                <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="swiper contactSwiper mt-10">
 
-                    <!-- Email Card -->
-                    <div class="bg-gray-50 rounded-2xl shadow-md p-6 hover:shadow-xl transition">
-                        <div class="text-blue-600 text-2xl mb-2">📧</div>
-                        <h4 class="font-semibold text-gray-800">Email</h4>
-                        <p class="text-gray-600 mt-2">tempsofiemae@gmail.com</p>
+                    <div class="swiper-wrapper">
+
+                        <!-- Email -->
+                        <div class="swiper-slide">
+                            <div class="contact-card">
+                                <div class="contact-icon">📧</div>
+                                <h4>Email</h4>
+                                <p>tempsofiemae@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="swiper-slide">
+                            <div class="contact-card">
+                                <div class="contact-icon">📱</div>
+                                <h4>Mobile</h4>
+                                <p>+63 987 387 2723</p>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="swiper-slide">
+                            <div class="contact-card">
+                                <div class="contact-icon">📍</div>
+                                <h4>Location</h4>
+                                <p>Bulacan, Philippines</p>
+                            </div>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="swiper-slide">
+                            <div class="contact-card">
+                                <div class="contact-icon">💻</div>
+                                <h4>GitHub</h4>
+                                <p>github.com/SofiaMay26</p>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <!-- Phone Card -->
-                    <div class="bg-gray-50 rounded-2xl shadow-md p-6 hover:shadow-xl transition">
-                        <div class="text-green-600 text-2xl mb-2">📱</div>
-                        <h4 class="font-semibold text-gray-800">Mobile</h4>
-                        <p class="text-gray-600 mt-2">+63 987 387 2723</p>
-                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
 
                 </div>
 
                 <div class="mt-10">
-                    <div class="mt-10">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tempsofiemae@gmail.com" target="_blank"
-                            class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700">
-                            Send Email
-                        </a>
-                    </div>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tempsofiemae@gmail.com" target="_blank"
+                        class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">
+                        Send Email
+                    </a>
                 </div>
+
             </div>
         </section>
-
         <!-- FOOTER -->
         <footer class="bg-gray-900 text-gray-400 py-6">
             <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">

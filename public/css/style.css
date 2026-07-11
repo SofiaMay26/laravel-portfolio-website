@@ -30,7 +30,7 @@ body.dark-theme {
     }
 }
 
-/* Swiper */
+/* Project Swiper */
 
 .swiper {
     width: 100%;
@@ -45,11 +45,73 @@ body.dark-theme {
     height: 100%;
 }
 
-/* Optional: make cards stretch evenly */
 .swiper-slide {
     display: flex;
 }
 
 .swiper-slide > div {
     width: 100%;
+}
+
+/* Contact Swiper */
+
+/* Contact Swiper */
+
+.contactSwiper {
+    width: 100%;
+    padding: 50px 40px 70px;
+}
+
+.contactSwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card {
+    width: 100%;
+    max-width: 320px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.35s;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.contact-card h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #6b7280;
+    font-size: 16px;
+    word-break: break-word;
+}
+
+.contactSwiper .swiper-button-next,
+.contactSwiper .swiper-button-prev {
+    color: #2563eb;
+}
+
+.contactSwiper .swiper-pagination-bullet {
+    background: #2563eb;
+}
+
+.contactSwiper .swiper-pagination-bullet-active {
+    width: 22px;
+    border-radius: 20px;
 }
