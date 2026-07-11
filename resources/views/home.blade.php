@@ -21,6 +21,11 @@
     <!-- Swiper  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/1x1.JPG') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/1x1.JPG') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/apple-touch-icon.png') }}">
+
 </head>
 
 
@@ -529,7 +534,7 @@
                     <div class="bg-gray-50 rounded-2xl shadow-md p-6 hover:shadow-xl transition">
                         <div class="text-green-600 text-2xl mb-2">📱</div>
                         <h4 class="font-semibold text-gray-800">Mobile</h4>
-                        <p class="text-gray-600 mt-2">0967-387-2723</p>
+                        <p class="text-gray-600 mt-2">+63 987 387 2723</p>
                     </div>
 
                 </div>
