@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
 
 <head>
@@ -17,6 +17,9 @@
 
     <!-- Optional: Favicon -->
     <link rel="icon" href="{{ asset('favicon.ico') }}">
+
+    <!-- Swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 </head>
 
@@ -250,142 +253,206 @@
         </section>
 
 
-
-
         <section id="projects" class="py-20 bg-gray-50">
             <div class="max-w-6xl mx-auto px-6">
 
-                <!-- Section Title -->
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
                     My Projects
                 </h2>
 
-                <!-- Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="swiper mySwiper">
 
+                    <div class="swiper-wrapper">
 
+                        <div class="swiper-slide">
+                            <!-- Project Card 1 -->
+                            <div
+                                class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                                <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
+                                    <source src="{{ asset('videos/my_first_website.mp4') }}" type="video/mp4">
+                                </video>
 
+                                <div class="p-5">
+                                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                                        My First Website! (2024)
+                                    </h3>
 
+                                    <p class="text-gray-600 mb-4">
+                                        My very first website project where I started learning HTML, CSS, and
+                                        JavaScript.
+                                        This project helped me understand responsive layouts and basic web development
+                                        fundamentals.
+                                    </p>
 
-                    <!-- Project Card 1(First Website)-->
-                    <div
-                        class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                                    <div class="flex flex-wrap gap-2 mb-5">
+                                        <span
+                                            class="text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded">HTML5</span>
+                                        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">CSS & UI
+                                            Design</span>
+                                        <span
+                                            class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JavaScript</span>
+                                    </div>
 
-                        <!-- Video -->
-                        <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
-                            <source src="{{ asset('videos/my_first_website.mp4') }}" type="video/mp4">
-                        </video>
-
-                        <!-- Content -->
-                        <div class="p-5">
-
-                            <!-- Title -->
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">
-                                My First Website!
-                            </h3>
-
-                            <!-- Description -->
-                            <p class="text-gray-600 mb-4">
-                                My very first website project where I started learning HTML, CSS, and JavaScript. This
-                                project helped me understand responsive layouts and basic web development fundamentals.
-                            </p>
-
-                            <!-- Tech Stack -->
-                            <div class="flex flex-wrap gap-2 mb-5">
-                                <span class="text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded"> HTML5 </span>
-                                <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded"> CSS & UI
-                                    Design</span>
-                                <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JavaScript</span>
-                            </div>
-
-                            <!-- Button -->
-                            <a href="https://github.com/SofiaMay26/sofia-business-website-2024.git"
-                                class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                                View Project
-                            </a>
-
-                        </div>
-                    </div>
-
-                    <!-- Project Card 2 (Website Assignment)-->
-                    <div
-                        class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-
-                        <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
-                            <source src="{{ asset('videos/website_assignment.mp4') }}" type="video/mp4">
-                        </video>
-
-
-
-                        <div class="p-5">
-                            <h3 class="text-xl font-bold text-gray-800 mb-3">
-                                Website Assignment
-                            </h3>
-                            <p class="text-gray-600 mb-4">
-                                A responsive website project showcasing modern UI design and web development features.
-                            </p>
-
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">HTML5</span>
-                                <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Bootstrap</span>
-                                <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JS</span>
-
-                            </div>
-
-                            <div class="flex gap-3">
-                                <a href="https://github.com/SofiaMay26/web-builder-assignment.git" target="_blank"
-                                    class="flex-1 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                                    View Project
-                                </a>
-
-
+                                    <a href="https://github.com/SofiaMay26/sofia-business-website-2024.git"
+                                        target="_blank"
+                                        class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                                        View Project
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Project Card 3 (SPC Website 2025)-->
-                    <div
-                        class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                        <div class="swiper-slide">
+                            <!-- Project Card 2 -->
+                            <div
+                                class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                                <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
+                                    <source src="{{ asset('videos/website_assignment.mp4') }}" type="video/mp4">
+                                </video>
 
-                        <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
-                            <source src="{{ asset('videos/spc_computer_hardware.mp4') }}" type="video/mp4">
-                        </video>
+                                <div class="p-5">
+                                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                                        Website Assignment
+                                    </h3>
 
+                                    <p class="text-gray-600 mb-4">
+                                        A responsive website project showcasing modern UI design and web development
+                                        features.
+                                    </p>
 
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">HTML5</span>
+                                        <span
+                                            class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Bootstrap</span>
+                                        <span
+                                            class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JavaScript</span>
+                                    </div>
 
-                        <div class="p-5">
-
-                            <h3 class="text-xl font-bold text-gray-800 mb-3 ">
-                                SPC Computer Hardware 2025
-                            </h3>
-
-                            <p class="text-gray-600 mb-4">
-                                A responsive computer hardware e-commerce website showcasing PC parts, accessories, and
-                                product listings built using Laravel and Tailwind CSS.
-                            </p>
-
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">HTML5</span>
-                                <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">CSS & UI
-                                    Design</span>
-                                <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Javascript</span>
-                                <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Bootstrap</span>
-                            </div>
-
-                            <div class="flex gap-3">
-                                <a href="https://github.com/marvinjagonio/Sofias_Final_Project.git" target="_blank"
-                                    class="flex-1 text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                                    View Project
-                                </a>
-
-
+                                    <a href="https://github.com/SofiaMay26/web-builder-assignment.git" target="_blank"
+                                        class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                                        View Project
+                                    </a>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="swiper-slide">
+                            <!-- Project Card 3 -->
+                            <div
+                                class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+                                <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
+                                    <source src="{{ asset('videos/spc_computer_hardware.mp4') }}" type="video/mp4">
+                                </video>
+
+                                <div class="p-5">
+                                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                                        SPC Computer Hardware (2025)
+                                    </h3>
+
+                                    <p class="text-gray-600 mb-4">
+                                        A responsive computer hardware e-commerce website showcasing PC parts,
+                                        accessories, and product listings built using Laravel and Tailwind CSS.
+                                    </p>
+
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">HTML5</span>
+                                        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">CSS & UI
+                                            Design</span>
+                                        <span
+                                            class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">JavaScript</span>
+                                        <span
+                                            class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Bootstrap</span>
+                                    </div>
+
+                                    <a href="https://github.com/marvinjagonio/Sofias_Final_Project.git"
+                                        target="_blank"
+                                        class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                                        View Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <!-- Project Card 4 -->
+                            <div
+                                class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
+
+                                <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
+                                    <source src="{{ asset('videos/longevity_website_2026.mp4') }}" type="video/mp4">
+                                </video>
+
+                                <div class="p-5">
+                                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+                                        Longevity Website (2026)
+                                    </h3>
+
+                                    <p class="text-gray-600 mb-4">
+                                        A modern health and wellness e-commerce website featuring longevity supplements,
+                                        healthy foods, wellness equipment, and educational resources. Built with a
+                                        clean,
+                                        responsive design to provide an engaging shopping experience across all devices.
+                                    </p>
+
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">HTML5</span>
+                                        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">CSS3</span>
+                                        <span
+                                            class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JavaScript</span>
+                                        <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Bootstrap
+                                            5</span>
+                                        <span
+                                            class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">GoHighLevel</span>
+                                    </div>
+
+                                    <a href="https://github.com/SofiaMay26/longevity-website-2026" target="_blank"
+                                        class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                                        View Project
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
 
                 </div>
+
             </div>
         </section>
+
+
+
+        <div class="swiper projectSwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Project 1 -->
+                <div class="swiper-slide">
+                    <!-- Project Card 1 code here -->
+                </div>
+
+                <!-- Project 2 -->
+                <div class="swiper-slide">
+                    <!-- Project Card 2 code here -->
+                </div>
+
+                <!-- Project 3 -->
+                <div class="swiper-slide">
+                    <!-- Project Card 3 code here -->
+                </div>
+
+            </div>
+
+            <!-- Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
 
         {{-- SEND ME A MESSAGE --}}
 
@@ -494,11 +561,16 @@
 
             </div>
         </footer>
+
+        <!-- Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="{{ asset('js/swiper.js') }}"></script>
         <!-- Custom JavaScript -->
         <script src="{{ asset('js/hero.js') }}"></script>
 
         <!-- Tailwind CSS CDN -->
         <script src="https://cdn.tailwindcss.com"></script>
+
 </body>
 
 </html>
