@@ -38,11 +38,18 @@
 
             <!-- Logo -->
             <a href="#"
-                class="text-2xl font-black tracking-tight text-white transition duration-300 hover:text-pink-400">
+                class="flex items-center gap-3 text-2xl font-black tracking-tight text-white transition duration-300 hover:text-pink-400">
 
-                <span class="text-pink-400">&lt;</span>
-                SofiaMay.dev
-                <span class="text-pink-400">/&gt;</span>
+                <!-- Profile Image -->
+                <img src="{{ asset('images/1x1.JPG') }}" alt="Sofia May"
+                    class="w-10 h-10 rounded-full object-cover border-2 border-pink-400 shadow-lg">
+
+                <!-- Logo Text -->
+                <span>
+                    <span class="text-pink-400">&lt;</span>
+                    SofiaMay.dev
+                    <span class="text-pink-400">/&gt;</span>
+                </span>
 
             </a>
 
@@ -180,7 +187,7 @@
                         </div>
 
                         <!-- Profile Image -->
-                        <img src="/images/profile_pic.jpg" alt="Profile"
+                        <img src="/images/my-laptop.jpg" alt="Profile"
                             class="relative w-72 h-72 object-cover rounded-3xl border-4 border-gray-800 shadow-2xl transition duration-500 group-hover:scale-105">
 
                     </div>
