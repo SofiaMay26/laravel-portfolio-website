@@ -47,7 +47,7 @@
                 <!-- Logo Text -->
                 <span>
                     <span class="text-pink-400">&lt;</span>
-                    SofiaMay.dev
+                    Laravel Portfolio
                     <span class="text-pink-400">/&gt;</span>
                 </span>
 
