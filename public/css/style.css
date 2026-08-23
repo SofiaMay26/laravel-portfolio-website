@@ -55,6 +55,8 @@ body.dark-theme {
 
 /* Contact Swiper */
 
+
+
 .contactSwiper {
     width: 100%;
     padding: 50px 40px 70px;
@@ -114,35 +116,35 @@ body.dark-theme {
     border-radius: 20px;
 }
 
-.tech-card {
-    background: #1f2937;
-    border: 1px solid #374151;
-    border-radius: 18px;
-    padding: 30px 20px;
-    text-align: center;
-    transition: 0.35s ease;
-    cursor: pointer;
+.tech-card{
+    background:#1f2937;
+    border:1px solid #374151;
+    border-radius:18px;
+    padding:30px 20px;
+    text-align:center;
+    transition:.35s ease;
+    cursor:pointer;
 }
 
-.tech-card:hover {
-    transform: translateY(-10px);
-    border-color: #3b82f6;
-    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.25);
+.tech-card:hover{
+    transform:translateY(-10px);
+    border-color:#3b82f6;
+    box-shadow:0 15px 35px rgba(59,130,246,.25);
 }
 
-.tech-card img {
-    width: 65px;
-    height: 65px;
-    margin-bottom: 18px;
-    transition: 0.35s;
+.tech-card img{
+    width:65px;
+    height:65px;
+    margin-bottom:18px;
+    transition:.35s;
 }
 
-.tech-card:hover img {
-    transform: scale(1.15) rotate(8deg);
+.tech-card:hover img{
+    transform:scale(1.15) rotate(8deg);
 }
 
-.tech-card h3 {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
+.tech-card h3{
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
 }
