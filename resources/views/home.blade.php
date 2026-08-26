@@ -171,87 +171,226 @@
 
         </section>
 
+        ```html
         <!-- About Me Section -->
-        <section id="about" class="min-h-screen bg-gray-950 text-white flex items-center justify-center px-6 py-20">
+        <section id="about" class="relative overflow-hidden bg-[#faf9fb] px-6 py-24">
 
-            <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+            <!-- Soft Background Decorations -->
+            <div class="absolute -left-40 top-20 h-80 w-80 rounded-full
+        bg-pink-100/50 blur-3xl"></div>
 
-                <!-- Left Side Image -->
+            <div class="absolute -right-40 bottom-10 h-80 w-80 rounded-full
+        bg-purple-100/50 blur-3xl"></div>
+
+
+            <div class="relative mx-auto grid w-full max-w-6xl
+        items-center gap-14 md:grid-cols-2">
+
+
+                <!-- =========================
+             LEFT SIDE - IMAGE
+        ========================== -->
                 <div class="flex justify-center">
 
-                    <div class="relative group">
+                    <div class="group relative">
 
-                        <!-- Glow Effect -->
+
+                        <!-- Soft Glow -->
                         <div
-                            class="absolute inset-0 bg-blue-500 blur-3xl opacity-20 group-hover:opacity-40 transition duration-500 rounded-full">
+                            class="absolute -inset-5 rounded-[2rem]
+                    bg-gradient-to-r from-pink-200
+                    to-purple-200 opacity-50 blur-2xl
+                    transition duration-500
+                    group-hover:opacity-80">
                         </div>
 
-                        <!-- Profile Image -->
-                        <img src="/images/my-laptop.jpg" alt="Profile"
-                            class="relative w-72 h-72 object-cover rounded-3xl border-4 border-gray-800 shadow-2xl transition duration-500 group-hover:scale-105">
+
+                        <!-- Image Frame -->
+                        <div
+                            class="relative overflow-hidden rounded-[2rem]
+                    border-8 border-white
+                    bg-white
+                    shadow-[0_20px_50px_rgba(0,0,0,0.10)]
+                    transition duration-500
+                    group-hover:-translate-y-2">
+
+
+                            <img src="/images/my-laptop.jpg" alt="Sofia working on web development"
+                                class="h-80 w-80 object-cover
+                            transition duration-700
+                            group-hover:scale-105
+                            md:h-96 md:w-96">
+
+
+                            <!-- Image Overlay -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t
+                        from-pink-500/10 to-transparent
+                        opacity-0 transition duration-500
+                        group-hover:opacity-100">
+                            </div>
+
+                        </div>
+
+
+                        <!-- Small Floating Badge -->
+                        <div
+                            class="absolute -bottom-5 -right-5
+                    rounded-2xl border border-pink-100
+                    bg-white px-5 py-4
+                    shadow-lg shadow-pink-100/50">
+
+                            <p class="text-xs font-medium text-gray-400">
+                                Currently
+                            </p>
+
+                            <p class="mt-1 text-sm font-bold text-gray-700">
+                                Learning & Growing
+                            </p>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-                <!-- Right Side Content -->
+
+
+                <!-- =========================
+             RIGHT SIDE - CONTENT
+        ========================== -->
                 <div>
 
-                    <p class="text-pink-400 font-semibold tracking-widest uppercase mb-3">
-                        About Me
-                    </p>
 
-                    <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                        Aspiring <span class="text-yellow-400">Web Developer</span>
+                    <!-- Label -->
+                    <div class="mb-4 flex items-center gap-3">
+
+                        <span class="h-px w-10 bg-pink-400"></span>
+
+                        <p class="text-sm font-semibold uppercase
+                    tracking-[0.2em] text-pink-500">
+                            About Me
+                        </p>
+
+                    </div>
+
+
+                    <!-- Heading -->
+                    <h2 class="mb-6 text-4xl font-bold leading-tight
+                text-gray-800 md:text-5xl">
+
+                        Aspiring
+                        <span class="text-pink-500">
+                            Web Developer
+                        </span>
+
                     </h2>
 
-                    <p class="text-gray-400 leading-relaxed text-lg mb-6">
-                        Hi! I'm Sofia, an aspiring web developer passionate about
-                        building modern and responsive websites using Laravel,
-                        Tailwind CSS, JavaScript, and MySQL.
+
+                    <!-- Description -->
+                    <p class="mb-5 text-lg leading-relaxed text-gray-500">
+
+                        Hi! I'm Sofia, an aspiring web developer passionate
+                        about building modern and responsive websites using
+                        Laravel, Tailwind CSS, JavaScript, and MySQL.
+
                     </p>
 
-                    <p class="text-gray-400 leading-relaxed text-lg mb-8">
-                        I enjoy creating clean UI designs, learning new technologies,
-                        and developing projects that improve my skills in frontend
-                        and backend development.
+
+                    <p class="mb-8 text-lg leading-relaxed text-gray-500">
+
+                        I enjoy creating clean UI designs, learning new
+                        technologies, and developing projects that help me
+                        grow my skills in both frontend and backend development.
+
                     </p>
+
+
+
+                    <!-- Skills Title -->
+                    <div class="mb-4 flex items-center gap-3">
+
+                        <h3 class="text-sm font-bold uppercase
+                    tracking-wider text-gray-700">
+                            Technologies I Use
+                        </h3>
+
+                        <div class="h-px flex-1 bg-gray-200"></div>
+
+                    </div>
+
+
 
                     <!-- Skills -->
-                    <div class="flex flex-wrap gap-3 mb-8">
+                    <div class="flex flex-wrap gap-3">
 
+
+                        <!-- HTML -->
                         <span
-                            class="px-4 py-2 rounded-xl bg-orange-500/20 text-orange-400 border border-orange-500/40 hover:bg-orange-500 hover:text-white transition duration-300">
+                            class="rounded-xl border border-orange-200
+                    bg-orange-50 px-4 py-2 text-sm font-medium
+                    text-orange-600 transition duration-300
+                    hover:-translate-y-1 hover:shadow-md">
                             HTML5
                         </span>
 
+
+                        <!-- CSS -->
                         <span
-                            class="px-4 py-2 rounded-xl bg-blue-500/20 text-blue-400 border border-blue-500/40 hover:bg-blue-500 hover:text-white transition duration-300">
+                            class="rounded-xl border border-blue-200
+                    bg-blue-50 px-4 py-2 text-sm font-medium
+                    text-blue-600 transition duration-300
+                    hover:-translate-y-1 hover:shadow-md">
                             CSS3
                         </span>
 
+
+                        <!-- Bootstrap -->
                         <span
-                            class="px-4 py-2 rounded-xl bg-purple-500/20 text-purple-400 border border-purple-500/40 hover:bg-purple-500 hover:text-white transition duration-300">
+                            class="rounded-xl border border-purple-200
+                    bg-purple-50 px-4 py-2 text-sm font-medium
+                    text-purple-600 transition duration-300
+                    hover:-translate-y-1 hover:shadow-md">
                             Bootstrap
                         </span>
 
+
+                        <!-- Laravel -->
                         <span
-                            class="px-4 py-2 rounded-xl bg-red-500/20 text-red-400 border border-red-500/40 hover:bg-red-500 hover:text-white transition duration-300">
+                            class="rounded-xl border border-red-200
+                    bg-red-50 px-4 py-2 text-sm font-medium
+                    text-red-600 transition duration-300
+                    hover:-translate-y-1 hover:shadow-md">
                             Laravel
                         </span>
 
+
+                        <!-- Tailwind -->
                         <span
-                            class="px-4 py-2 rounded-xl bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 hover:bg-cyan-500 hover:text-white transition duration-300">
+                            class="rounded-xl border border-cyan-200
+                    bg-cyan-50 px-4 py-2 text-sm font-medium
+                    text-cyan-600 transition duration-300
+                    hover:-translate-y-1 hover:shadow-md">
                             Tailwind CSS
                         </span>
 
+
+                        <!-- JavaScript -->
                         <span
-                            class="px-4 py-2 rounded-xl bg-yellow-500/20 text-yellow-400 border border-yellow-500/40 hover:bg-yellow-500 hover:text-white transition duration-300">
+                            class="rounded-xl border border-yellow-200
+                    bg-yellow-50 px-4 py-2 text-sm font-medium
+                    text-yellow-600 transition duration-300
+                    hover:-translate-y-1 hover:shadow-md">
                             JavaScript
                         </span>
 
+
+                        <!-- MySQL -->
                         <span
-                            class="px-4 py-2 rounded-xl bg-sky-500/20 text-sky-400 border border-sky-500/40 hover:bg-sky-500 hover:text-white transition duration-300">
+                            class="rounded-xl border border-sky-200
+                    bg-sky-50 px-4 py-2 text-sm font-medium
+                    text-sky-600 transition duration-300
+                    hover:-translate-y-1 hover:shadow-md">
                             MySQL
                         </span>
 
@@ -259,183 +398,332 @@
 
 
 
+                    <!-- Bottom Highlight -->
+                    <div
+                        class="mt-9 flex items-center gap-4
+                rounded-2xl border border-pink-100
+                bg-pink-50/50 p-4">
+
+                        <div
+                            class="flex h-10 w-10 shrink-0 items-center
+                    justify-center rounded-xl bg-white
+                    text-pink-500 shadow-sm">
+                            ✦
+                        </div>
+
+                        <div>
+
+                            <p class="text-sm font-semibold text-gray-700">
+                                Always learning, always improving.
+                            </p>
+
+                            <p class="mt-1 text-xs text-gray-400">
+                                Building projects and growing as a developer.
+                            </p>
+
+                        </div>
+
+                    </div>
+
 
                 </div>
 
             </div>
 
         </section>
+        ```
 
 
-        <section id="projects" class="py-20 bg-gray-50">
-            <div class="max-w-6xl mx-auto px-6">
+        <section id="projects" class="projects-section">
 
-                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-                    My Projects
-                </h2>
+            <div class="projects-container">
 
+                <!-- Section Header -->
+                <div class="projects-header">
+                    <span class="projects-label">MY WORK</span>
+
+                    <h2>
+                        Featured <span>Projects</span>
+                    </h2>
+
+                    <p>
+                        A collection of projects I've created while developing my
+                        skills in web development and modern UI design.
+                    </p>
+                </div>
+
+
+                <!-- Swiper -->
                 <div class="swiper mySwiper">
 
                     <div class="swiper-wrapper">
 
+
+                        <!-- PROJECT 1 -->
                         <div class="swiper-slide">
-                            <!-- Project Card 1 -->
-                            <div
-                                class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-                                <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
-                                    <source src="{{ asset('videos/my_first_website.mp4') }}" type="video/mp4">
-                                </video>
 
-                                <div class="p-5">
-                                    <h3 class="text-xl font-bold text-gray-800 mb-3">
-                                        My First Website! (2024)
-                                    </h3>
+                            <div class="project-card">
 
-                                    <p class="text-gray-600 mb-4">
-                                        My very first website project where I started learning HTML, CSS, and
-                                        JavaScript.
-                                        This project helped me understand responsive layouts and basic web development
-                                        fundamentals.
-                                    </p>
+                                <div class="project-image">
 
-                                    <div class="flex flex-wrap gap-2 mb-5">
-                                        <span
-                                            class="text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded">HTML5</span>
-                                        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">CSS & UI
-                                            Design</span>
-                                        <span
-                                            class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JavaScript</span>
+                                    <video autoplay muted loop playsinline>
+                                        <source src="{{ asset('videos/my_first_website.mp4') }}" type="video/mp4">
+                                    </video>
+
+                                    <div class="project-overlay">
+                                        <span>2024</span>
                                     </div>
 
-                                    <a href="https://github.com/SofiaMay26/sofia-business-website-2024.git"
-                                        target="_blank"
-                                        class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                                        View Project
-                                    </a>
                                 </div>
+
+
+                                <div class="project-content">
+
+                                    <div class="project-number">
+                                        01
+                                    </div>
+
+                                    <h3>
+                                        My First Website
+                                    </h3>
+
+                                    <p>
+                                        My very first website project where I started
+                                        learning HTML, CSS, and JavaScript. This project
+                                        helped me understand responsive layouts and basic
+                                        web development fundamentals.
+                                    </p>
+
+
+                                    <div class="project-tech">
+
+                                        <span class="html">HTML5</span>
+                                        <span class="css">CSS & UI Design</span>
+                                        <span class="js">JavaScript</span>
+
+                                    </div>
+
+
+                                    <a href="https://github.com/SofiaMay26/sofia-business-website-2024.git"
+                                        target="_blank" class="project-button">
+
+                                        View Project
+
+                                        <span>↗</span>
+
+                                    </a>
+
+                                </div>
+
                             </div>
+
                         </div>
 
-                        <div class="swiper-slide">
-                            <!-- Project Card 2 -->
-                            <div
-                                class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-                                <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
-                                    <source src="{{ asset('videos/website_assignment.mp4') }}" type="video/mp4">
-                                </video>
 
-                                <div class="p-5">
-                                    <h3 class="text-xl font-bold text-gray-800 mb-3">
+
+                        <!-- PROJECT 2 -->
+                        <div class="swiper-slide">
+
+                            <div class="project-card">
+
+                                <div class="project-image">
+
+                                    <video autoplay muted loop playsinline>
+                                        <source src="{{ asset('videos/website_assignment.mp4') }}" type="video/mp4">
+                                    </video>
+
+                                    <div class="project-overlay">
+                                        <span>2024</span>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="project-content">
+
+                                    <div class="project-number">
+                                        02
+                                    </div>
+
+                                    <h3>
                                         Website Assignment
                                     </h3>
 
-                                    <p class="text-gray-600 mb-4">
-                                        A responsive website project showcasing modern UI design and web development
-                                        features.
+                                    <p>
+                                        A responsive website project showcasing modern
+                                        UI design and web development features with a
+                                        focus on clean layouts and responsive design.
                                     </p>
 
-                                    <div class="flex flex-wrap gap-2 mb-4">
-                                        <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">HTML5</span>
-                                        <span
-                                            class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Bootstrap</span>
-                                        <span
-                                            class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JavaScript</span>
+
+                                    <div class="project-tech">
+
+                                        <span class="html">HTML5</span>
+                                        <span class="bootstrap">Bootstrap</span>
+                                        <span class="js">JavaScript</span>
+
                                     </div>
+
 
                                     <a href="https://github.com/SofiaMay26/web-builder-assignment.git" target="_blank"
-                                        class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                                        class="project-button">
+
                                         View Project
+
+                                        <span>↗</span>
+
                                     </a>
+
                                 </div>
+
                             </div>
+
                         </div>
 
-                        <div class="swiper-slide">
-                            <!-- Project Card 3 -->
-                            <div
-                                class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
-                                <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
-                                    <source src="{{ asset('videos/spc_computer_hardware.mp4') }}" type="video/mp4">
-                                </video>
 
-                                <div class="p-5">
-                                    <h3 class="text-xl font-bold text-gray-800 mb-3">
-                                        SPC Computer Hardware (2025)
+
+                        <!-- PROJECT 3 -->
+                        <div class="swiper-slide">
+
+                            <div class="project-card">
+
+                                <div class="project-image">
+
+                                    <video autoplay muted loop playsinline>
+                                        <source src="{{ asset('videos/spc_computer_hardware.mp4') }}"
+                                            type="video/mp4">
+                                    </video>
+
+                                    <div class="project-overlay">
+                                        <span>2025</span>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="project-content">
+
+                                    <div class="project-number">
+                                        03
+                                    </div>
+
+                                    <h3>
+                                        SPC Computer Hardware
                                     </h3>
 
-                                    <p class="text-gray-600 mb-4">
-                                        A responsive computer hardware e-commerce website showcasing PC parts,
-                                        accessories, and product listings built using Laravel and Tailwind CSS.
+                                    <p>
+                                        A responsive computer hardware e-commerce
+                                        website showcasing PC parts, accessories,
+                                        and product listings built using Laravel
+                                        and Tailwind CSS.
                                     </p>
 
-                                    <div class="flex flex-wrap gap-2 mb-4">
-                                        <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">HTML5</span>
-                                        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">CSS & UI
-                                            Design</span>
-                                        <span
-                                            class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">JavaScript</span>
-                                        <span
-                                            class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Bootstrap</span>
+
+                                    <div class="project-tech">
+
+                                        <span class="html">HTML5</span>
+                                        <span class="css">CSS & UI Design</span>
+                                        <span class="js">JavaScript</span>
+                                        <span class="bootstrap">Bootstrap</span>
+
                                     </div>
+
 
                                     <a href="https://github.com/marvinjagonio/Sofias_Final_Project.git"
-                                        target="_blank"
-                                        class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                                        target="_blank" class="project-button">
+
                                         View Project
+
+                                        <span>↗</span>
+
                                     </a>
+
                                 </div>
+
                             </div>
+
                         </div>
+
+
+
+                        <!-- PROJECT 4 -->
                         <div class="swiper-slide">
-                            <!-- Project Card 4 -->
-                            <div
-                                class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2">
 
-                                <video class="w-full h-48 object-cover" autoplay muted loop playsinline>
-                                    <source src="{{ asset('videos/longevity_website_2026.mp4') }}" type="video/mp4">
-                                </video>
+                            <div class="project-card">
 
-                                <div class="p-5">
-                                    <h3 class="text-xl font-bold text-gray-800 mb-3">
-                                        Longevity Website (2026)
-                                    </h3>
+                                <div class="project-image">
 
-                                    <p class="text-gray-600 mb-4">
-                                        A modern health and wellness e-commerce website featuring longevity supplements,
-                                        healthy foods, wellness equipment, and educational resources. Built with a
-                                        clean,
-                                        responsive design to provide an engaging shopping experience across all devices.
-                                    </p>
+                                    <video autoplay muted loop playsinline>
+                                        <source src="{{ asset('videos/longevity_website_2026.mp4') }}"
+                                            type="video/mp4">
+                                    </video>
 
-                                    <div class="flex flex-wrap gap-2 mb-4">
-                                        <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">HTML5</span>
-                                        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">CSS3</span>
-                                        <span
-                                            class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">JavaScript</span>
-                                        <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Bootstrap
-                                            5</span>
-                                        <span
-                                            class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">GoHighLevel</span>
+                                    <div class="project-overlay">
+                                        <span>2026</span>
                                     </div>
 
-                                    <a href="https://github.com/SofiaMay26/longevity-website-2026" target="_blank"
-                                        class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
-                                        View Project
-                                    </a>
                                 </div>
+
+
+                                <div class="project-content">
+
+                                    <div class="project-number">
+                                        04
+                                    </div>
+
+                                    <h3>
+                                        Longevity Website
+                                    </h3>
+
+                                    <p>
+                                        A modern health and wellness e-commerce website
+                                        featuring longevity supplements, healthy foods,
+                                        wellness equipment, and educational resources.
+                                    </p>
+
+
+                                    <div class="project-tech">
+
+                                        <span class="html">HTML5</span>
+                                        <span class="css">CSS3</span>
+                                        <span class="js">JavaScript</span>
+                                        <span class="bootstrap">Bootstrap 5</span>
+                                        <span class="ghl">GoHighLevel</span>
+
+                                    </div>
+
+
+                                    <a href="https://github.com/SofiaMay26/longevity-website-2026" target="_blank"
+                                        class="project-button">
+
+                                        View Project
+
+                                        <span>↗</span>
+
+                                    </a>
+
+                                </div>
+
                             </div>
+
                         </div>
+
 
                     </div>
 
+
+                    <!-- Pagination -->
                     <div class="swiper-pagination"></div>
 
+
+                    <!-- Navigation -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
 
                 </div>
 
             </div>
+
         </section>
 
 
@@ -449,53 +737,350 @@
         <div class="swiper-pagination"></div>
         </div>
 
+        ```html
         {{-- SEND ME A MESSAGE --}}
 
-        <section class="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-            <div class="w-full max-w-2xl bg-white shadow-lg rounded-2xl p-8">
+        <section id="contact" class="relative overflow-hidden bg-[#faf9fb] px-4 py-24">
 
-                <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">
-                    Contact Me
-                </h2>
+            {{-- Soft Background Decorations --}}
+            <div class="absolute -left-32 top-20 h-72 w-72 rounded-full
+        bg-pink-100/50 blur-3xl"></div>
 
-                <p class="text-center text-gray-500 mb-8">
-                    Got a project or question? Send me a message 👇
+            <div class="absolute -right-32 bottom-10 h-72 w-72 rounded-full
+        bg-purple-100/50 blur-3xl"></div>
+
+
+            <div class="relative mx-auto max-w-5xl">
+
+
+                {{-- Section Heading --}}
+                <div class="mb-12 text-center">
+
+                    <p class="mb-3 text-sm font-semibold uppercase
+                tracking-[0.25em] text-pink-500">
+                        Get In Touch
+                    </p>
+
+                    <h2 class="text-4xl font-bold text-gray-800 md:text-5xl">
+                        Let's Work
+                        <span class="text-pink-500">Together</span>
+                    </h2>
+
+                    <p class="mx-auto mt-4 max-w-xl text-gray-500">
+                        Have a project, question, or opportunity?
+                        Feel free to send me a message. I'd love to hear from you.
+                    </p>
+
+                </div>
+
+
+
+                {{-- Contact Card --}}
+                <div
+                    class="grid overflow-hidden rounded-3xl
+            border border-gray-200 bg-white
+            shadow-[0_15px_50px_rgba(0,0,0,0.06)]
+            md:grid-cols-5">
+
+
+                    {{-- Left Information --}}
+                    <div
+                        class="relative overflow-hidden
+                bg-gradient-to-br from-pink-50 to-purple-50
+                p-8 md:col-span-2 md:p-10">
+
+                        {{-- Decorative Circle --}}
+                        <div
+                            class="absolute -right-16 -top-16 h-40 w-40
+                    rounded-full bg-pink-200/40">
+                        </div>
+
+
+                        <div class="relative">
+
+                            <div class="mb-8">
+
+                                <span class="text-3xl text-pink-400">
+                                    ✦
+                                </span>
+
+                                <h3 class="mt-4 text-2xl font-bold text-gray-800">
+                                    Say Hello
+                                </h3>
+
+                                <p class="mt-3 text-sm leading-6 text-gray-500">
+                                    Whether you have a project idea, a job opportunity,
+                                    or simply want to connect, you're welcome to reach out.
+                                </p>
+
+                            </div>
+
+
+                            {{-- Contact Details --}}
+                            <div class="space-y-6">
+
+
+                                {{-- Email --}}
+                                <div class="flex items-start gap-4">
+
+                                    <div
+                                        class="flex h-10 w-10 shrink-0 items-center
+                                justify-center rounded-xl bg-white
+                                text-pink-500 shadow-sm">
+
+                                        ✉
+
+                                    </div>
+
+                                    <div>
+
+                                        <p
+                                            class="text-xs font-semibold uppercase
+                                    tracking-wide text-gray-400">
+                                            Email
+                                        </p>
+
+                                        <p class="mt-1 text-sm font-medium text-gray-700">
+                                            your-email@example.com
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                {{-- Location --}}
+                                <div class="flex items-start gap-4">
+
+                                    <div
+                                        class="flex h-10 w-10 shrink-0 items-center
+                                justify-center rounded-xl bg-white
+                                text-pink-500 shadow-sm">
+
+                                        📍
+
+                                    </div>
+
+                                    <div>
+
+                                        <p
+                                            class="text-xs font-semibold uppercase
+                                    tracking-wide text-gray-400">
+                                            Location
+                                        </p>
+
+                                        <p class="mt-1 text-sm font-medium text-gray-700">
+                                            Philippines
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                {{-- Availability --}}
+                                <div class="flex items-start gap-4">
+
+                                    <div
+                                        class="flex h-10 w-10 shrink-0 items-center
+                                justify-center rounded-xl bg-white
+                                text-pink-500 shadow-sm">
+
+                                        ●
+
+                                    </div>
+
+                                    <div>
+
+                                        <p
+                                            class="text-xs font-semibold uppercase
+                                    tracking-wide text-gray-400">
+                                            Status
+                                        </p>
+
+                                        <p class="mt-1 text-sm font-medium text-gray-700">
+                                            Open to opportunities
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            {{-- Small Quote --}}
+                            <div class="mt-10 border-l-2 border-pink-300 pl-4">
+
+                                <p class="text-sm italic leading-6 text-gray-500">
+                                    "Good design is not just about how it looks,
+                                    but how it works."
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    {{-- Form --}}
+                    <div class="p-8 md:col-span-3 md:p-10">
+
+
+                        {{-- Success Message --}}
+                        @if (session('success'))
+                            <div
+                                class="mb-6 rounded-xl border border-green-100
+                        bg-green-50 p-4 text-center text-sm
+                        font-medium text-green-600">
+
+                                ✓ {{ session('success') }}
+
+                            </div>
+                        @endif
+
+
+                        {{-- Errors --}}
+                        @if ($errors->any())
+
+                            <div
+                                class="mb-6 rounded-xl border border-red-100
+                        bg-red-50 p-4 text-sm text-red-500">
+
+                                <ul class="space-y-1">
+
+                                    @foreach ($errors->all() as $error)
+                                        <li>• {{ $error }}</li>
+                                    @endforeach
+
+                                </ul>
+
+                            </div>
+
+                        @endif
+
+
+                        <form action="{{ route('contact.store') }}" method="POST" class="space-y-6">
+
+                            @csrf
+
+
+                            {{-- Name --}}
+                            <div>
+
+                                <label for="name" class="mb-2 block text-sm font-semibold text-gray-700">
+
+                                    Your Name
+
+                                </label>
+
+                                <input id="name" type="text" name="name" value="{{ old('name') }}"
+                                    placeholder="Enter your name"
+                                    class="w-full rounded-xl border border-gray-200
+                                bg-gray-50 px-4 py-3.5 text-gray-700
+                                outline-none transition duration-300
+                                placeholder:text-gray-400
+                                hover:border-gray-300
+                                focus:border-pink-400
+                                focus:bg-white
+                                focus:ring-4
+                                focus:ring-pink-100"
+                                    required>
+
+                            </div>
+
+
+                            {{-- Email --}}
+                            <div>
+
+                                <label for="email" class="mb-2 block text-sm font-semibold text-gray-700">
+
+                                    Email Address
+
+                                </label>
+
+                                <input id="email" type="email" name="email" value="{{ old('email') }}"
+                                    placeholder="your@email.com"
+                                    class="w-full rounded-xl border border-gray-200
+                                bg-gray-50 px-4 py-3.5 text-gray-700
+                                outline-none transition duration-300
+                                placeholder:text-gray-400
+                                hover:border-gray-300
+                                focus:border-pink-400
+                                focus:bg-white
+                                focus:ring-4
+                                focus:ring-pink-100"
+                                    required>
+
+                            </div>
+
+
+                            {{-- Message --}}
+                            <div>
+
+                                <label for="message" class="mb-2 block text-sm font-semibold text-gray-700">
+
+                                    Your Message
+
+                                </label>
+
+                                <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..."
+                                    class="w-full resize-none rounded-xl
+                                border border-gray-200
+                                bg-gray-50 px-4 py-3.5
+                                text-gray-700 outline-none
+                                transition duration-300
+                                placeholder:text-gray-400
+                                hover:border-gray-300
+                                focus:border-pink-400
+                                focus:bg-white
+                                focus:ring-4
+                                focus:ring-pink-100"
+                                    required>{{ old('message') }}</textarea>
+
+                            </div>
+
+
+                            {{-- Button --}}
+                            <button type="submit"
+                                class="group flex w-full items-center
+                            justify-center gap-3 rounded-xl
+                            bg-gray-800 px-6 py-4
+                            font-semibold text-white
+                            transition duration-300
+                            hover:-translate-y-1
+                            hover:bg-pink-500
+                            hover:shadow-lg
+                            hover:shadow-pink-200">
+
+                                Send Message
+
+                                <span
+                                    class="transition-transform duration-300
+                            group-hover:translate-x-1">
+                                    →
+                                </span>
+
+                            </button>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                {{-- Footer Note --}}
+                <p class="mt-8 text-center text-sm text-gray-400">
+                    Thank you for visiting my portfolio.
                 </p>
 
-                {{-- Success Message --}}
-                @if (session('success'))
-                    <div class="bg-green-100 text-green-700 p-3 rounded mb-5 text-center">
-                        {{ session('success') }}
-                    </div>
-                @endif
-
-                <form action="{{ route('contact.store') }}" method="POST" class="space-y-5">
-                    @csrf
-
-                    {{-- Name --}}
-                    <input type="text" name="name" placeholder="Your Name"
-                        class="w-full border border-gray-300 rounded-lg p-3 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                        required>
-
-                    {{-- Email --}}
-                    <input type="email" name="email" placeholder="Your Email"
-                        class="w-full border border-gray-300 rounded-lg p-3 text-black placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                        required>
-
-                    {{-- Message --}}
-                    <textarea name="message" rows="5" placeholder="Your Message"
-                        class="w-full border border-gray-300 rounded-lg p-3 text-black focus:outline-none focus:ring-2 focus:ring-blue-400"
-                        required></textarea>
-
-                    {{-- Button --}}
-                    <button type="submit"
-                        class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                        Send Message
-                    </button>
-                </form>
             </div>
-        </section>
 
+        </section>
 
 
         <!-- CONTACT SECTION -->
